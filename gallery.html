@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Gallery - Wanderlust Travels</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h2>Travel Gallery</h2>
+
+  <button id="toggleLayout">Toggle Layout</button>
+
+  <div class="gallery" id="gallery">
+    <img src="images/paris-trip.jpg" data-large="images/paris-trip.jpg" alt="Paris">
+    <img src="images/maldives.webp" data-large="images/maldives.webp" alt="Maldives">
+    <img src="images/switzerland.jpg" data-large="images/switzerland.jpg" alt="Switzerland">
+    <img src="images/dubai.jpg" data-large="images/dubai.jpg" alt="Dubai">
+  </div>
+
+  <!-- Modal -->
+  <div id="modal" class="modal">
+    <span id="closeModal">&times;</span>
+    <img id="modalImg">
+    <p id="modalCaption"></p>
+  </div>
+
+  <a href="index.html">← Back to Home</a>
+
+  <script src="script.js"></script>
+</body>
+</html>

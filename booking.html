@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Booking - Wanderlust Travels</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h2>Book Your Trip</h2>
+    <nav>
+      <a class="nav-link" href="index.html">Home</a>
+      <a class="nav-link" href="packages.html">Packages</a>
+      <a class="nav-link active" href="booking.html">Booking</a>
+      <a class="nav-link" href="gallery.html">Gallery</a>
+      <a class="nav-link" href="about.html">About Us</a>
+    </nav>
+  </header>
+
+  <main>
+    <form id="booking-form">
+      <label>Name:</label>
+      <input type="text" id="name" required><br><br>
+
+      <label>Email:</label>
+      <input type="email" id="email" required><br><br>
+
+      <label>Destination:</label>
+      <select id="destination" required>
+        <option value="">-- Select Destination --</option>
+        <option value="Paris">Paris</option>
+        <option value="Maldives">Maldives</option>
+        <option value="Dubai">Dubai</option>
+        <option value="Switzerland">Switzerland</option>
+      </select><br><br>
+
+      <label>Package Type:</label>
+      <select id="packageType" required>
+        <option value="">-- Select Package --</option>
+        <option value="Economy">Economy</option>
+        <option value="Standard">Standard</option>
+        <option value="Luxury">Luxury</option>
+      </select><br><br>
+
+      <label>Check-in Date:</label>
+      <input type="date" id="start-date" required>
+
+      <label>Check-out Date:</label>
+      <input type="date" id="end-date" required><br><br>
+
+      <label>Guests:</label>
+      <input type="number" id="guests" min="1" value="1" required><br><br>
+
+      <label>Promo Code:</label>
+      <input type="text" id="promo"><br><br>
+
+      <h3>Total Price: ₹<span id="totalPrice">0</span></h3>
+
+      <button id="submitBtn" disabled>Book Now</button>
+    </form>
+
+    <a href="index.html">← Back to Home</a>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
